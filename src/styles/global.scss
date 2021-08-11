@@ -1,0 +1,42 @@
+//Variables
+$font-size: 16px !default;
+$color-dark: #090b11;
+$color-grey: #eaeaea;
+$color-grey-dark: #818c99;
+$color-grey-light: #818c99;
+$color-grey-thin: #818c99;
+$color-primary: #007aff;
+$color-purple: #25264a;
+$color-purple-light: #303243;
+$color-purple-dark: #31353f;
+$color-purple-thin: #818c99;
+$color-yellow: #eebb50;
+$color-smoke: #edeef0;
+$color-red: #bf3b4b;
+$color-red-dark: #401a23;
+$color-green: #31b984;
+$shadow-main: 0 0 5px rgba(0, 0, 0, 0.1);
+$transition-base: 0.1s;
+
+//Mixins
+
+@mixin font-preset($size, $weight, $color, $lh: null, $ls: null, $font: null) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin media-mx($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-mn($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

@@ -1,0 +1,39 @@
+@import 'styles/global';
+
+.Profit {
+  display: grid;
+  justify-items: stretch;
+  &__btn {
+    color: $color-yellow;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__btnLabel {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 11px;
+    color: $color-yellow;
+  }
+
+  &__grey {
+    color: #818c99;
+  }
+
+  &__control {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__controlDouble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 8px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,13 @@
+.CustomSlider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-gap: 7px;
+  outline: none;
+  border: none;
+
+  &__value {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+}

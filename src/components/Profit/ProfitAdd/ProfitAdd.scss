@@ -1,0 +1,98 @@
+@import 'styles/global';
+
+.ProfitAdd {
+  display: grid;
+  grid-gap: 24px;
+  margin-bottom: 14px;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-gap: 16px;
+  }
+
+  &__fieldBlock {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: $color-purple-light;
+  }
+
+  &__field {
+    .MuiInputBase-input {
+      color: white;
+      padding: 0;
+      font-size: 16px;
+      font-family: 'SFProRounded';
+      line-height: 24px;
+      font-weight: normal;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    .MuiInputLabel-marginDense {
+      transform: translate(0, 10px) scale(1);
+    }
+    .MuiInputLabel-shrink {
+      transform: translate(0, 1.5px) scale(0.6);
+    }
+
+    .MuiFormLabel-root {
+      color: $color-purple-thin !important;
+      font-family: 'SFProText';
+    }
+    .MuiInput-underline:before,
+    .MuiInput-underline:after {
+      opacity: 0;
+    }
+  }
+
+  &__switchBtn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: 1px solid $color-grey-thin;
+    outline: none;
+    border-radius: 100%;
+    transition: all $transition-base;
+
+    &:hover {
+      background-color: darken($color-grey-thin, 20%);
+      border-color: darken($color-grey-thin, 20%);
+    }
+  }
+
+  &__addBtn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(180deg, #5683ff 78.12%, #7398ff 100%), #5683ff;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    transition: all $transition-base;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__amountTitle {
+    font-size: 12px;
+    color: $color-grey-light;
+  }
+}

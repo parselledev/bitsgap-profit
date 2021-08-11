@@ -1,0 +1,58 @@
+@import 'styles/global';
+
+.CustomModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+
+  &__body {
+    min-width: 375px;
+    display: grid;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  &__header {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(180deg, #161824 0%, #0e1018 37.5%), #0e1018;
+
+    * {
+      color: white;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__closeBtn {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    top: 50%;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background: $color-purple-dark;
+    border: none;
+    border-radius: 100%;
+    color: #818c99;
+    transform: translateY(-50%);
+    transition: background $transition-base;
+
+    &:hover {
+      background: darken($color-purple-dark, 5%);
+    }
+  }
+
+  &__content {
+    padding: 24px 16px;
+    background: $color-dark;
+  }
+}
